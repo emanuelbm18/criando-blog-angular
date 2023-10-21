@@ -1,0 +1,27 @@
+:root {
+  --color1: #fffbdf;
+  --color2: #ff43c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color1);
+  font-family: "Gill Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

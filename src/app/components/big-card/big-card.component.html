@@ -1,0 +1,18 @@
+<div class="container__big">
+  <div class="big__img">
+    <img src="{{ photoCover }}" alt="Ideias" height="250px" srcset="" />
+  </div>
+  <h1>
+    <a [routerLink]="['content', id]" class="big__title">{{ cardTitle }}</a>
+  </h1>
+
+  <p class="big__description">
+    <a [routerLink]="['content', id]">
+      {{ cardDescription }}
+    </a>
+  </p>
+
+  <div class="big__keys">
+    <span *ngFor="let keyNew of cardKeys"> {{ keyNew }}</span>
+  </div>
+</div>

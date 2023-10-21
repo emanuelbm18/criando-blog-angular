@@ -1,0 +1,21 @@
+<div class="container__small">
+  <div class="small__img">
+    <img src="{{ photoCover }}" height="60px" srcset="" />
+  </div>
+  <div class="small__other">
+    <span> {{ cardDate }}</span>
+    <h1>
+      <a [routerLink]="['content', id]" class="small__title">{{ cardTitle }}</a>
+    </h1>
+
+    <p class="small__description">
+      <a [routerLink]="['content', id]">
+        {{ cardDescription }}
+      </a>
+    </p>
+
+    <div class="small__keys">
+      <span *ngFor="let keyNew of cardKeys"> {{ keyNew }}</span>
+    </div>
+  </div>
+</div>
